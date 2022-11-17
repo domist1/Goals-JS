@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="section">
+        <div class="planner">
+            <div class="heading">
+                <div class="heading-center">
+                    <div class="title-container">
+                        <h3 class="title">goals</h3>
+                        <div class="title-btn-container">
+                            <button class="btn-light"><i class="fas fa-sun"></i></button>
+                            <button class="btn-dark"><i class="fas fa-moon"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formAll">
+                <div class="form-control">
+                        <form class="form">
+                            <div class="input-container">
+                                <input type="text" id="input" placeholder="add goal and choose timeframe!">
+                            </div>
+                            <div class="btn-container">
+                                <button type="submit" class="btn oneDay" id="day">Day</button>
+                                <button type="submit" class="btn oneWeek"id="week">Week</button>
+                                <button type="submit" class="btn oneMonth"id="month">Month</button>
+                                <button type="submit" class="btn oneYear" id="year">Year</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+            <div class="goals-list">
+                <div class="goals-center"></div>
+            </div>
+            <div class="date">Day Goals</div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

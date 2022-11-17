@@ -1,0 +1,212 @@
+:root{
+    --letter-spacing: 1.25px;
+    --transition: all 0.3s ease-in-out;
+    --radius: 10%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Courier New", Courier, monospace;
+}
+
+/*
+=============== 
+PLANER  
+===============
+*/
+
+.section{
+    background: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: var(--transition);
+}
+
+.planner{
+    width: 30vw;
+    height: 60vh;
+    background-color: #141414;
+    border-radius: 3%;
+    transition: var(--transition);
+}
+
+/*
+=============== 
+HEADING
+===============
+*/
+
+.heading{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.heading-center{
+    width: 80%;
+}
+
+.title-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0.25rem 0rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+}
+
+.btn-light, .btn-dark{
+    border: none;
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: var(--transition);
+}
+
+.btn-dark {
+    display: none;
+}
+
+/*
+=============== 
+FORM
+===============
+*/
+
+.formAll {
+    display: grid;
+    place-items: center;
+}
+
+.form-control{
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+    display: grid;
+}
+
+#input{
+    width: 75%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #141414;
+}
+
+#input::placeholder{
+    text-transform: capitalize;
+}
+
+.btn{
+    border: none;
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: var(--transition);
+}
+
+.oneDay:hover,.oneWeek:hover,.oneMonth:hover,.oneYear:hover{
+    background-color: #4d4d4d;
+}
+
+/*
+=============== 
+GOALS
+===============
+*/
+
+.goals-list {
+    height: 55%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.goals-center{
+    /* display: none; */
+    width: 80%;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+.goals-center .show{
+    display: block;
+}
+
+.single-goal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+    background: #4d4d4d;
+    padding: 0.25rem 1.5rem;
+    border: 2px solid whitesmoke;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    color: whitesmoke;
+    font-weight: 400;
+}
+.single-goal .goal-btn-container .btn{
+    font-size: 0.75rem;
+}
+
+/*
+=============== 
+DATE
+===============
+*/
+
+.date{
+    text-align: center;
+    margin-top: 1rem;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+/*
+=============== 
+RESPONSIVE DESIGN
+===============
+*/
+
+@media screen and (max-width: 1000px){
+    .btn-center{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        padding: 0 0.25rem;
+        height: 2rem;
+        border: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .planner{
+        width: 100vw;
+        height: 100vh;
+        background-color: #141414;
+        transition: var(--transition);
+        border-radius: 0%;
+    }
+}
