@@ -1,2 +1,3 @@
 # Goals-JS
-Minimalistic to-do list
+
+Minimalistic to-do list with pure JS
